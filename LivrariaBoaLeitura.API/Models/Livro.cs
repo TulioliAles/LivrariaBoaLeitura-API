@@ -4,7 +4,7 @@ namespace LivrariaBoaLeitura.API.Models
 {
     public class Livro
     {
-        public Guid Id { get; set; }
+        public Guid ID { get; set; }
         public string Nome { get; set; }
         public double Preco { get; set; }
         public int Quantidade { get; set; }
