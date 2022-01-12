@@ -10,6 +10,9 @@ namespace LivrariaBoaLeitura.API.Mapping
         {
             builder.ToTable("Livro");
 
+            builder.Property(p => p.ID)
+                .IsRequired();
+
             builder.Property(p => p.Nome)
                 .HasColumnType("varchar(100)")
                 .IsRequired();

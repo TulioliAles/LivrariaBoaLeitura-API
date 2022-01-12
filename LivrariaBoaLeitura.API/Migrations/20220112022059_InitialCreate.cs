@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LivrariaBoaLeitura.API.Migrations
 {
@@ -11,11 +10,13 @@ namespace LivrariaBoaLeitura.API.Migrations
                 name: "Livro",
                 columns: table => new
                 {
-                    ID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "varchar(100)", nullable: false),
                     Preco = table.Column<decimal>(type: "numeric(38,2)", nullable: false),
                     Quantidade = table.Column<decimal>(type: "numeric(30)", nullable: false),
-                    Categoria = table.Column<string>(type: "varchar(100)", nullable: true)
+                    Categoria = table.Column<string>(type: "varchar(100)", nullable: true),
+                    Imagem = table.Column<string>(type: "varchar", nullable: true)
                 },
                 constraints: table =>
                 {
