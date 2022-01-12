@@ -23,5 +23,18 @@ namespace LivrariaBoaLeitura.API.Controllers
         {
             return await _context.todoLivros.ToListAsync();
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Livro>> GetLivroById(int id)
+        {
+            var item = await _context.todoLivros.FindAsync(id);
+
+            if(item == null)
+            {
+                return BadRequest();
+            }
+
+            return item; 
+        }
     }
 }
