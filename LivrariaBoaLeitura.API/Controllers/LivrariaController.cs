@@ -40,7 +40,12 @@ namespace LivrariaBoaLeitura.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Livro>> PostLivro(Livro livro)
         {
-            _context.todoLivros.AddAsync(livro);
+            var item = _context.todoLivros.AddAsync(livro);
+
+            if (item == null)
+            {
+                return BadRequest();
+            }
 
             _context.SaveChanges();
 
@@ -60,6 +65,23 @@ namespace LivrariaBoaLeitura.API.Controllers
             _context.SaveChanges();
 
             return await this.GetLivroById(livro.ID);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Livro>> DeleteLivro(int id)
+        {
+            var item = await _context.todoLivros.FindAsync(id);
+
+            if(item == null)
+            {
+                return BadRequest("Item Removido");
+            }
+
+            _context.Remove(item);
+
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }
