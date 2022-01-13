@@ -46,5 +46,20 @@ namespace LivrariaBoaLeitura.API.Controllers
 
             return await this.GetLivroById(livro.ID);
         }
+
+        [HttpPut]
+        public async Task<ActionResult<Livro>> UpdateLivro(Livro livro)
+        {
+            var item = _context.todoLivros.Update(livro);
+
+            if (item == null)
+            {
+                return BadRequest();
+            }
+
+            _context.SaveChanges();
+
+            return await this.GetLivroById(livro.ID);
+        }
     }
 }
