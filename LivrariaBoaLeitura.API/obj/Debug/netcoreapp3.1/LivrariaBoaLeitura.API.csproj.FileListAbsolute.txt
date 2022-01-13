@@ -64,3 +64,8 @@ C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.A
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\obj\Debug\netcoreapp3.1\LivrariaBoaLeitura.API.pdb
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\obj\Debug\netcoreapp3.1\LivrariaBoaLeitura.API.genruntimeconfig.cache
 C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\obj\Debug\netcoreapp3.1\LivrariaBoaLeitura.API.csproj.AssemblyReference.cache
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\alessandro.tulioli\Documents\ADM\Projetos_Net_Core\LivrariaBoaLeitura.API\LivrariaBoaLeitura.API\obj\Debug\netcoreapp3.1\LivrariaBoaLeitura.API.MvcApplicationPartsAssemblyInfo.cs

@@ -23,6 +23,8 @@ namespace LivrariaBoaLeitura.API
             services.AddControllers();
 
             services.AddDbContext<ToDoContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +45,9 @@ namespace LivrariaBoaLeitura.API
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
         }
     }
 }
